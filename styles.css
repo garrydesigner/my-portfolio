@@ -1,0 +1,109 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Blurred background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg image 2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px); /* Apply blur */
+    z-index: -1; /* Ensure it's behind all content */
+}
+
+/* Content container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(161, 161, 161, 0.2);
+    text-align: center;
+}
+
+/* Heading styles */
+h1, h {
+    color: #7700ff;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+/* Profile picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(234, 234, 234, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9500c6;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a.button:hover {
+    background-color: #f34dff;
+    transform: scale(1.05);
+}
+
+/* Link styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
