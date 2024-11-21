@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurwinder Singh - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Link for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Blurred background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('bg image 2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px); /* Apply blur */
+            z-index: -1; /* Ensure it's behind all content */
+        }
+
+        /* Content container */
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(161, 161, 161, 0.2);
+            text-align: center;
+        }
+
+        /* Heading styles */
+        h1, h {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        /* Profile picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+
+        /* Button styles */
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #da00fb;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #f34dff;
+            transform: scale(1.05);
+        }
+
+        /* Social Links */
+        .social-links a {
+            margin: 10px;
+            font-size: 30px; /* Increase icon size */
+            color: #b734db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Section styles */
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preload the click sound -->
+    <audio id="btn" src="click-sound.mp3" preload="auto"></audio>
+
+    <div class="container">
+        <img src="profile.jpg" alt="Profile Picture of Gurwinder Singh" class="profile-pic">
+        <h1>Gurwinder Singh</h1>
+        <p><strong style="color: #ffffff;">Graphic Designer | Digital Artist | Character & Concept Artist</strong></p>
+        <p><a href="artwork.html" class="button" id="portfolio-button">Portfolio</a></p>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm a character designer, concept artist, illustrator, and graphics designer. At the age of 18-19, I got hired as a designer because of my portfolio; I highly recommend checking it out.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>I have the ability to mimic various art styles, regardless of their complexity. This skill is valuable, especially when multiple artists collaborate on a project and a cohesive style is necessary.</p>
+            <p>In graphic design, my understanding of color theory, font selection, and alignment is crucial. I often incorporate doodles into my designs, particularly for childhood products like snacks and toys.</p>
+            <p>Additionally, I possess knowledge of coding, specifically in website creation and design. My portfolio website showcases my skills in this area.</p>
+            <p><strong>Software Proficiency:</strong></p>
+            <p>CorelDRAW, Adobe Illustrator, Adobe Photoshop, Clip Studio Paint.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <p>I have professional experience in graphic design, as my first role was as a graphic designer. Currently, I work as a freelance digital artist and am also employed as a webtoon artist for a studio.</p>
+        </div>
+
+        <div class="section">
+            <h2>Portfolio</h2>
+            <p>Explore my work: <a href="artwork.html" class="button">Portfolio</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Personal Note</h2>
+            <p>I believe that continuously learning is much more valuable than pretending to know everything. At 20, I see my commitment to growth as a real achievement. I’m excited to keep improving, and I really appreciate the feedback I get from friends who are more experienced.</p>
+        </div>
+
+        <!-- Social Media Links with Icons -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/creasom_/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://x.com/creasom_21" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://cara.app/creasom" target="_blank" class="fab fa-c"></a>
+            <a href="https://www.twitch.tv/creasom_" target="_blank" class="fab fa-twitch"></a>
+            <a href="https://patreon.com/Creasom_art?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" class="fab fa-patreon"></a>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script>
+        document.getElementById('portfolio-button').addEventListener('click', function() {
+            var audio = document.getElementById('btn');
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
